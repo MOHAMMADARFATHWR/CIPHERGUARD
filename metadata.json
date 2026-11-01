@@ -1,0 +1,6 @@
+{
+  "name": "CipherGuard 3D",
+  "description": "Interactive Banking Transaction Security & Adversarial Simulation Platform. Real-time cryptographic pipeline visualization defending against MITM, tampering, and replay attacks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

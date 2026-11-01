@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="advBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120609"/>
+      <stop offset="50%" stop-color="#180b11"/>
+      <stop offset="100%" stop-color="#090306"/>
+    </linearGradient>
+    <linearGradient id="redBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <pattern id="hexPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 14,0 L 28,8 L 28,20 L 14,28 L 0,20 L 0,8 Z" fill="none" stroke="#2a1017" stroke-width="0.7"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#advBg)"/>
+  <rect width="1280" height="720" fill="url(#hexPattern)"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="1280" height="54" fill="#18070c" stroke="#371118"/>
+  <circle cx="28" cy="27" r="14" fill="#ef4444"/>
+  <text x="50" y="32" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">CIPHERGUARD 3D // ADVERSARY SIMULATOR</text>
+  <rect x="420" y="16" width="130" height="22" rx="4" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444"/>
+  <text x="430" y="31" fill="#fca5a5" font-family="monospace" font-size="10" font-weight="bold">ADVERSARY CONSOLE</text>
+
+  <!-- Title Banner -->
+  <g transform="translate(60, 76)">
+    <rect width="1160" height="66" rx="10" fill="#200a10" stroke="#4c1d24"/>
+    <text x="24" y="32" fill="#f87171" font-family="-apple-system, sans-serif" font-weight="700" font-size="19">Adversary Attack Lab &amp; Cryptographic Interception</text>
+    <text x="24" y="52" fill="#fda4af" font-family="sans-serif" font-size="12">Execute active MITM tampering, packet replays, and signature forgery against zero-trust banking nodes.</text>
+    <rect x="1000" y="18" width="136" height="30" rx="6" fill="#ef4444" fill-opacity="0.3" stroke="#ef4444"/>
+    <text x="1014" y="38" fill="#fecaca" font-family="monospace" font-size="11" font-weight="bold">⚡ ADVERSARY ACTIVE</text>
+  </g>
+
+  <!-- Attack Vector Cards (4 Options) -->
+  <g transform="translate(60, 160)">
+    <!-- Attack 1: MITM Bit Tampering (Selected) -->
+    <rect x="0" y="0" width="275" height="110" rx="10" fill="#300d14" stroke="#ef4444" stroke-width="2"/>
+    <rect x="14" y="14" width="24" height="24" rx="4" fill="#ef4444" fill-opacity="0.3"/>
+    <text x="21" y="31" fill="#fecaca" font-family="sans-serif" font-weight="bold" font-size="12">☠</text>
+    <text x="46" y="30" fill="#fecaca" font-family="sans-serif" font-size="13" font-weight="bold">MITM Bit Tampering</text>
+    <text x="14" y="58" fill="#fda4af" font-family="sans-serif" font-size="11">Flip ciphertext bytes in transit.</text>
+    <text x="14" y="74" fill="#fda4af" font-family="sans-serif" font-size="11">Target: ₹25,000 ➔ ₹500,000</text>
+    <rect x="14" y="84" width="110" height="18" rx="3" fill="#ef4444"/>
+    <text x="22" y="96" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="bold">DEFENDED AT GATE 2</text>
+
+    <!-- Attack 2: Replay Attack -->
+    <rect x="295" y="0" width="275" height="110" rx="10" fill="#1e0a10" stroke="#3b1118"/>
+    <rect x="309" y="14" width="24" height="24" rx="4" fill="#f97316" fill-opacity="0.2"/>
+    <text x="315" y="31" fill="#fdba74" font-family="sans-serif" font-weight="bold" font-size="12">↻</text>
+    <text x="341" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">Replay Interception</text>
+    <text x="309" y="58" fill="#9ca3af" font-family="sans-serif" font-size="11">Resend previous valid packet.</text>
+    <text x="309" y="74" fill="#9ca3af" font-family="sans-serif" font-size="11">Goal: Drain balance twice.</text>
+    <rect x="309" y="84" width="110" height="18" rx="3" fill="#78350f"/>
+    <text x="317" y="96" fill="#fef3c7" font-family="sans-serif" font-size="9" font-weight="bold">DEFENDED AT GATE 4</text>
+
+    <!-- Attack 3: Signature Forgery -->
+    <rect x="590" y="0" width="275" height="110" rx="10" fill="#1e0a10" stroke="#3b1118"/>
+    <rect x="604" y="14" width="24" height="24" rx="4" fill="#a855f7" fill-opacity="0.2"/>
+    <text x="611" y="31" fill="#d8b4fe" font-family="sans-serif" font-weight="bold" font-size="12">✍</text>
+    <text x="636" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">ECDSA Key Forgery</text>
+    <text x="604" y="58" fill="#9ca3af" font-family="sans-serif" font-size="11">Sign with rogue attacker key.</text>
+    <text x="604" y="74" fill="#9ca3af" font-family="sans-serif" font-size="11">Goal: Bypass authentication.</text>
+    <rect x="604" y="84" width="110" height="18" rx="3" fill="#581c87"/>
+    <text x="612" y="96" fill="#f3e8ff" font-family="sans-serif" font-size="9" font-weight="bold">DEFENDED AT GATE 3</text>
+
+    <!-- Attack 4: TLS Degradation -->
+    <rect x="885" y="0" width="275" height="110" rx="10" fill="#1e0a10" stroke="#3b1118"/>
+    <rect x="899" y="14" width="24" height="24" rx="4" fill="#eab308" fill-opacity="0.2"/>
+    <text x="906" y="31" fill="#fde047" font-family="sans-serif" font-weight="bold" font-size="12">⚡</text>
+    <text x="931" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">TLS Suite Downgrade</text>
+    <text x="899" y="58" fill="#9ca3af" font-family="sans-serif" font-size="11">Force legacy RC4 / DES cipher.</text>
+    <text x="899" y="74" fill="#9ca3af" font-family="sans-serif" font-size="11">Goal: Decrypt transit packets.</text>
+    <rect x="899" y="84" width="110" height="18" rx="3" fill="#713f12"/>
+    <text x="907" y="96" fill="#fef9c3" font-family="sans-serif" font-size="9" font-weight="bold">DEFENDED AT GATE 1</text>
+  </g>
+
+  <!-- Middle: Attack Execution Terminal & Ciphertext Diff Viewer -->
+  <g transform="translate(60, 290)">
+    <rect width="1160" height="380" rx="12" fill="#140609" stroke="#4c1d24"/>
+    <rect width="1160" height="36" rx="12" fill="#200a10" stroke="#4c1d24"/>
+    <text x="24" y="23" fill="#fca5a5" font-family="monospace" font-size="12" font-weight="bold">INTERCEPTED WIRE PACKET DIFF VIEWER (AES-256-GCM AEAD INTEGRITY TEST)</text>
+
+    <!-- Side-by-Side Wire Diff -->
+    <!-- Original Legitimate Packet -->
+    <g transform="translate(24, 54)">
+      <rect width="540" height="210" rx="8" fill="#0d0406" stroke="#2e0f15"/>
+      <text x="16" y="24" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">ORIGINAL CANONICAL PAYLOAD (PRIYA SHARMA)</text>
+      <text x="16" y="50" fill="#64748b" font-family="monospace" font-size="10">// Amount: ₹25,000.00 | Recipient: Rahul Verma</text>
+      <text x="16" y="72" fill="#94a3b8" font-family="monospace" font-size="10">Canonical SHA-256 Digest:</text>
+      <text x="16" y="90" fill="#38bdf8" font-family="monospace" font-size="10">d84ea28b7e01c4fa9201bd82f483c749102847a9</text>
+      <text x="16" y="118" fill="#94a3b8" font-family="monospace" font-size="10">AES-256-GCM Ephemeral Tag:</text>
+      <text x="16" y="136" fill="#34d399" font-family="monospace" font-size="10">a8f27c3e109d43bf29c8e10471b0aa93 [VALID]</text>
+      <rect x="16" y="160" width="160" height="26" rx="4" fill="#065f46" fill-opacity="0.4" stroke="#059669"/>
+      <text x="26" y="177" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">✔ Authentic Tag Match</text>
+    </g>
+
+    <!-- Tampered Packet -->
+    <g transform="translate(596, 54)">
+      <rect width="540" height="210" rx="8" fill="#1c070b" stroke="#7f1d1d"/>
+      <text x="16" y="24" fill="#ef4444" font-family="monospace" font-size="11" font-weight="bold">TAMPERED FORGED PACKET (ADVERSARY INJECTION)</text>
+      <text x="16" y="50" fill="#f87171" font-family="monospace" font-size="10">// Tampered: ₹500,000.00 | 1 Bit Modified in Ciphertext</text>
+      <text x="16" y="72" fill="#fca5a5" font-family="monospace" font-size="10">Calculated SHA-256 Digest:</text>
+      <text x="16" y="90" fill="#f87171" font-family="monospace" font-size="10">107f9c2a3e8184f0032bc84910823901b7e41982</text>
+      <text x="16" y="118" fill="#fca5a5" font-family="monospace" font-size="10">Bank Core AEAD Tag Verification:</text>
+      <text x="16" y="136" fill="#ef4444" font-family="monospace" font-size="10">TAG MISMATCH: Received tag does not authenticate</text>
+      <rect x="16" y="160" width="220" height="26" rx="4" fill="#991b1b" fill-opacity="0.6" stroke="#ef4444"/>
+      <text x="26" y="177" fill="#fecaca" font-family="sans-serif" font-size="11" font-weight="bold">✖ BLOCKED AT GATE 2 (TAG ERROR)</text>
+    </g>
+
+    <!-- Bottom Incident Action Alert -->
+    <g transform="translate(24, 280)">
+      <rect width="1112" height="74" rx="8" fill="#2d0b11" stroke="#ef4444"/>
+      <circle cx="28" cy="37" r="14" fill="#ef4444"/>
+      <text x="24" y="42" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">!</text>
+      <text x="54" y="30" fill="#fecaca" font-family="sans-serif" font-size="14" font-weight="bold">Automated Defense Triggered: Incident #INC-2026-0812</text>
+      <text x="54" y="50" fill="#fca5a5" font-family="sans-serif" font-size="11">The Zero-Trust Gateway severed the session. Sender balance remains untouched. Forensic telemetry dispatched to SOC Command Center.</text>
+    </g>
+  </g>
+</svg>

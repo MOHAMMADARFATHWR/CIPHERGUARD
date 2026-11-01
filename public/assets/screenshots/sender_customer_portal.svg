@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="custBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050d18"/>
+      <stop offset="50%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#030810"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e293b" fill-opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#custBg)"/>
+  <rect width="1280" height="720" fill="url(#dotGrid)"/>
+
+  <!-- Top Navigation -->
+  <rect x="0" y="0" width="1280" height="54" fill="#091424" stroke="#1e293b"/>
+  <circle cx="28" cy="27" r="14" fill="url(#tealGrad)"/>
+  <text x="50" y="32" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">CIPHERGUARD 3D // SECURE PORTAL</text>
+  <rect x="180" y="14" width="90" height="26" rx="6" fill="#14b8a6" fill-opacity="0.15" stroke="#14b8a6" stroke-opacity="0.4"/>
+  <text x="194" y="31" fill="#2dd4bf" font-family="sans-serif" font-size="12" font-weight="600">Sender Home</text>
+
+  <!-- Left: Banking Account Card & Keypair Status -->
+  <g transform="translate(60, 80)">
+    <!-- Balance Card -->
+    <rect width="420" height="220" rx="16" fill="url(#tealGrad)"/>
+    <text x="28" y="44" fill="#ccfbf1" font-family="sans-serif" font-size="13" font-weight="600">AEGIS PLATINUM VAULT</text>
+    <text x="320" y="44" fill="#f0fdfa" font-family="monospace" font-size="12">RFC-8446</text>
+    <text x="28" y="90" fill="#f0fdfa" font-family="sans-serif" font-size="11">Available Balance</text>
+    <text x="28" y="126" fill="#ffffff" font-family="monospace" font-size="34" font-weight="800">₹250,000.00</text>
+    <text x="28" y="174" fill="#f0fdfa" font-family="monospace" font-size="14" letter-spacing="2">•••• •••• •••• 4892</text>
+    <text x="28" y="196" fill="#ccfbf1" font-family="sans-serif" font-size="11">Priya Sharma • ACC-PRIYA-9821</text>
+    <circle cx="360" cy="180" r="18" fill="#ffffff" fill-opacity="0.2"/>
+    <circle cx="380" cy="180" r="18" fill="#ffffff" fill-opacity="0.3"/>
+
+    <!-- Cryptographic Identity Card -->
+    <g transform="translate(0, 240)">
+      <rect width="420" height="340" rx="12" fill="#0c192c" stroke="#1e293b"/>
+      <rect width="420" height="36" rx="12" fill="#13243e"/>
+      <text x="18" y="23" fill="#2dd4bf" font-family="sans-serif" font-size="12" font-weight="600">Web Crypto API Hardware Keys</text>
+      <text x="18" y="60" fill="#94a3b8" font-family="monospace" font-size="10">ALGORITHM: ECDSA (Curve: P-256)</text>
+      <text x="18" y="78" fill="#94a3b8" font-family="monospace" font-size="10">STORAGE: Non-extractable IndexedDB</text>
+      <rect x="18" y="92" width="384" height="66" rx="6" fill="#07101e" stroke="#1e293b"/>
+      <text x="26" y="112" fill="#64748b" font-family="monospace" font-size="9">// Public Key (secp256r1)</text>
+      <text x="26" y="128" fill="#38bdf8" font-family="monospace" font-size="9">MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgA...</text>
+      <text x="26" y="144" fill="#38bdf8" font-family="monospace" font-size="9">E2B1A80...7D8F [Verified In Core Bank]</text>
+
+      <text x="18" y="184" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Active Security Safeguards</text>
+      <g transform="translate(18, 196)">
+        <text x="0" y="16" fill="#34d399" font-family="sans-serif" font-size="11">✔ Biometric Credential Attestation</text>
+        <text x="0" y="36" fill="#34d399" font-family="sans-serif" font-size="11">✔ SHA-256 Canonical JSON Serialization</text>
+        <text x="0" y="56" fill="#34d399" font-family="sans-serif" font-size="11">✔ Ephemeral AES-256-GCM Envelope</text>
+        <text x="0" y="76" fill="#34d399" font-family="sans-serif" font-size="11">✔ 128-bit Anti-Replay Cryptographic Nonce</text>
+        <text x="0" y="96" fill="#34d399" font-family="sans-serif" font-size="11">✔ Instant ISO 20022 Ledger Settlement</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Secure Transfer Form & Verification Receipt -->
+  <g transform="translate(510, 80)">
+    <rect width="710" height="580" rx="16" fill="#0d1b30" stroke="#1e293b"/>
+    <rect width="710" height="48" rx="16" fill="#13243e"/>
+    <text x="24" y="30" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Initiate Cryptographically Signed Fund Transfer</text>
+
+    <!-- Transfer Form Fields -->
+    <g transform="translate(24, 70)">
+      <!-- Recipient -->
+      <text x="0" y="12" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600">RECIPIENT ACCOUNT</text>
+      <rect y="22" width="662" height="42" rx="8" fill="#07101e" stroke="#334155"/>
+      <text x="16" y="48" fill="#f8fafc" font-family="monospace" font-size="13">ACC-RAHUL-4401 (Rahul Verma • Mumbai Node)</text>
+
+      <!-- Amount -->
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600">TRANSFER AMOUNT (INR)</text>
+        <rect y="22" width="662" height="42" rx="8" fill="#07101e" stroke="#14b8a6"/>
+        <text x="16" y="48" fill="#2dd4bf" font-family="monospace" font-size="16" font-weight="bold">₹ 25,000.00</text>
+      </g>
+
+      <!-- Security Pipeline Execution Flow Preview -->
+      <g transform="translate(0, 160)">
+        <rect width="662" height="150" rx="10" fill="#0a1424" stroke="#1e293b"/>
+        <text x="16" y="24" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">Under-The-Hood Cryptographic Execution:</text>
+        <text x="16" y="48" fill="#94a3b8" font-family="monospace" font-size="10">1. Generating random 128-bit Nonce: 0x9f4a821e</text>
+        <text x="16" y="68" fill="#94a3b8" font-family="monospace" font-size="10">2. Signing SHA-256 payload with local P-256 private key</text>
+        <text x="16" y="88" fill="#94a3b8" font-family="monospace" font-size="10">3. Encrypting with AES-256-GCM AEAD authenticated envelope</text>
+        <text x="16" y="108" fill="#94a3b8" font-family="monospace" font-size="10">4. Transmitting via mutual TLS 1.3 tunnel to Banking Gateway</text>
+        <text x="16" y="128" fill="#34d399" font-family="monospace" font-size="10">5. Settling atomically to Rahul Verma with non-repudiable receipt</text>
+      </g>
+
+      <!-- Sign & Authorize Button -->
+      <g transform="translate(0, 330)">
+        <rect width="662" height="52" rx="10" fill="url(#tealGrad)"/>
+        <text x="331" y="32" fill="#042f2e" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">🔒 Sign &amp; Dispatch via 5-Gate Defense</text>
+      </g>
+
+      <!-- Recent Verified Settlement Confirmation -->
+      <g transform="translate(0, 400)">
+        <rect width="662" height="74" rx="8" fill="#064e3b" fill-opacity="0.4" stroke="#059669"/>
+        <circle cx="28" cy="37" r="14" fill="#10b981"/>
+        <text x="24" y="42" fill="#064e3b" font-family="sans-serif" font-size="14" font-weight="bold">✔</text>
+        <text x="54" y="30" fill="#a7f3d0" font-family="sans-serif" font-size="13" font-weight="bold">Transfer Successful: Receipt #RCP-9821-4401</text>
+        <text x="54" y="50" fill="#6ee7b7" font-family="sans-serif" font-size="11">Cleared Gate 5 Ledger settlement in 21ms. Receiver balance updated to ₹68,500.00.</text>
+      </g>
+    </g>
+  </g>
+</svg>
